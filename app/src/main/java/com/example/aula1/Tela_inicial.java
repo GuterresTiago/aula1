@@ -2,6 +2,7 @@ package com.example.aula1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -22,8 +23,8 @@ public class Tela_inicial extends AppCompatActivity {
         TimerTask tt =new TimerTask(){
                                  @Override
                                  public void run() {
-                                     setContentView(R.layout.activity_main);
-                                     Button botao= findViewById(R.id.btnHello);
+                                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                                     startActivity(intent);
 
                                  }
                              };

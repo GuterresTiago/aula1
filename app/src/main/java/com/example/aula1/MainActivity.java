@@ -2,6 +2,7 @@ package com.example.aula1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         botaoCa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_tela_cadastro);
+                Intent intent = new Intent(getApplicationContext(),Tela_cadastro.class);
+                startActivity(intent);
             }
         });
         botao.setOnClickListener(new View.OnClickListener() {
