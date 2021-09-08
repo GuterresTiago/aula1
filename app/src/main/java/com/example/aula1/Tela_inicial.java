@@ -21,10 +21,10 @@ public class Tela_inicial extends AppCompatActivity {
 
         Timer t = new Timer();
         TimerTask tt =new TimerTask(){
-                                 @Override
-                                 public void run() {
-                                     Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                                     startActivity(intent);
+            @Override
+            public void run() {
+                Intent intent = new Intent(getApplicationContext(),Tela_Botao.class);
+                startActivity(intent);
 
                                  }
                              };
