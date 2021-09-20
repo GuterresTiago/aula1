@@ -15,7 +15,11 @@ import com.example.aula1.R;
 import java.util.List;
 
 public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHolder> {
-    private List<Commeents> commeent;
+    private List<Commeents> commeents;
+
+    public CommentsAdapter(List<Commeents> comes) {
+        this.commeents = comes;
+    }
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -25,9 +29,7 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
             this.view = itemView;
         }
     }
-    public CommentsAdapter(List<Commeents> comes) {
-        this.commeent = comes;
-    }
+
 
 
 
@@ -42,9 +44,9 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull CommentsAdapter.ViewHolder holder, int position) {
-        Commeents come = commeent.get(position);
+        Commeents come = commeents.get(position);
         TextView tvs = holder.view.findViewById(R.id.tvCid);
-        tvs.setText(come.getPost_id());
+        tvs.setText(come.getId());
         tvs = holder.view.findViewById(R.id.tvCname);
         tvs.setText(come.getName());
         tvs = holder.view.findViewById(R.id.tvCbody);
@@ -55,7 +57,7 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
 
     @Override
     public int getItemCount() {
-        return commeent.size();
+        return commeents.size();
     }
 
 }

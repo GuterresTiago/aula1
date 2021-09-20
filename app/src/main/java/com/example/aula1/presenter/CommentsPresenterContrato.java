@@ -4,7 +4,7 @@ import android.content.Context;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-public class CommentsContrato {   public interface view {
+public class CommentsPresenterContrato {   public interface view {
     public void preparaRecylerView(RecyclerView.Adapter adapter);
     public void limpaRecycler();
     public Context getContexto();

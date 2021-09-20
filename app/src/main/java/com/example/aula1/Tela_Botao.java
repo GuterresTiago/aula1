@@ -11,8 +11,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.aula1.presenter.CommentsContrato;
-import com.example.aula1.presenter.CommentsPresenter;
 import com.example.aula1.presenter.TodoPresenter;
 import com.example.aula1.presenter.TodoPresenterContrato;
 //import com.example.aula1.presenter.UserPresenter;

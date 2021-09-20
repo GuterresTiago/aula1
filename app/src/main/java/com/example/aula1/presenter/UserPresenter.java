@@ -24,7 +24,6 @@ public class UserPresenter implements UserPresenterContrato.presenter,
 
     private List<User> users = new ArrayList<>();
     private UserPresenterContrato.view activity;
-    private int adp = 1;
     private String urlBase;
 
     public UserPresenter(UserPresenterContrato.view act, String urBase) {
@@ -46,25 +45,16 @@ public class UserPresenter implements UserPresenterContrato.presenter,
     }
 
     public void onResponseTodo(JSONArray response) {
-        //ScrollView sv = findViewById(R.id.scroll);
-        //LinearLayout ll = findViewById(R.id.leiauteVertical);
+
         users.clear();
 
         try {
-            for (int x = 0; x <30; x++) {
                 for (int i = 0; i < response.length(); i++) {
                     users.add(new User(response.getJSONObject(i)));
                 }
-            }
+
             RecyclerView.Adapter adapter;
-            adapter = new UserAdapter(users);
-            if (adp == 1) {
                 adapter = new UserAdapter(users);
-                adp = 2;
-            }else {
-                adapter = new UserAdapter(users);
-                adp = 1;
-            }
 
             activity.preparaRecylerView(adapter);
 
@@ -77,20 +67,16 @@ public class UserPresenter implements UserPresenterContrato.presenter,
         users.clear();
 
         try {
-           // for (int x = 0; x <30; x++) {
+
                 for (int i = 0; i < response.length(); i++) {
                     users.add(new User(response.getJSONObject(i)));
                 }
-           // }
+
             RecyclerView.Adapter adapter;
             adapter = new UserAdapter(users);
-            if (adp == 1) {
+
                 adapter = new UserAdapter(users);
-                adp = 2;
-            }else {
-                adapter = new UserAdapter(users);
-                adp = 1;
-            }
+
 
             activity.preparaRecylerView(adapter);
 
