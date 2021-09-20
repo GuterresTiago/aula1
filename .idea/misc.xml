@@ -10,6 +10,9 @@
         <entry key="..\:/Uniritter/device/app/src/main/res/layout/activity_tela_inicial.xml" value="0.25729166666666664" />
         <entry key="..\:/Uniritter/device/app/src/main/res/layout/activity_tela_selecao.xml" value="0.2552083333333333" />
         <entry key="..\:/Uniritter/device/app/src/main/res/layout/activity_tela_users.xml" value="0.2015625" />
+        <entry key="..\:/Uniritter/device/app/src/main/res/layout/comments_layout.xml" value="0.33" />
+        <entry key="..\:/Uniritter/device/app/src/main/res/layout/todo_layout.xml" value="0.33" />
+        <entry key="..\:/Uniritter/device/app/src/main/res/layout/user_layout.xml" value="0.33" />
       </map>
     </option>
   </component>

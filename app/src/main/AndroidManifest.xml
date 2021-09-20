@@ -21,9 +21,6 @@
             android:name=".Tela_Botao"
             android:exported="true" />
         <activity
-            android:name=".Tela_todos"
-            android:exported="true" />
-        <activity
             android:name=".Tela_cadastro"
             android:exported="true" />
         <activity

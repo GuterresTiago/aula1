@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvTodoIDUser"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:background="#1F57C8">
+
+    <TextView
+        android:id="@+id/tvTodoTitulo"
+        android:layout_width="405dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:textColor="#BBDEFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Switch
+        android:id="@+id/swTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:minHeight="48dp"
+        android:text="Completo"
+        app:layout_constraintStart_toStartOf="@+id/tvTodoTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTodoTitulo" />
+
+    <TextView
+        android:id="@+id/tvTodoUser"
+        android:layout_width="108dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/swTodo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTodoTitulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
